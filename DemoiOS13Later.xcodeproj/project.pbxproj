@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2A63FB24AAD22A0049962E /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = EB2A63FA24AAD22A0049962E /* SwiftHEXColors */; };
 		EB8AB48223E272B000372D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8AB48123E272B000372D86 /* AppDelegate.swift */; };
 		EB8AB48423E272B000372D86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8AB48323E272B000372D86 /* SceneDelegate.swift */; };
 		EB8AB48623E272B000372D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8AB48523E272B000372D86 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2A63FB24AAD22A0049962E /* SwiftHEXColors in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = DemoiOS13Later;
+			packageProductDependencies = (
+				EB2A63FA24AAD22A0049962E /* SwiftHEXColors */,
+			);
 			productName = DemoiOS13Later;
 			productReference = EB8AB47E23E272B000372D86 /* DemoiOS13Later.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +170,9 @@
 				Base,
 			);
 			mainGroup = EB8AB47523E272B000372D86;
+			packageReferences = (
+				EB2A63F924AAD22A0049962E /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
+			);
 			productRefGroup = EB8AB47F23E272B000372D86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -465,6 +473,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB2A63F924AAD22A0049962E /* XCRemoteSwiftPackageReference "SwiftHEXColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thii/SwiftHEXColors";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB2A63FA24AAD22A0049962E /* SwiftHEXColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB2A63F924AAD22A0049962E /* XCRemoteSwiftPackageReference "SwiftHEXColors" */;
+			productName = SwiftHEXColors;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB8AB47623E272B000372D86 /* Project object */;
 }

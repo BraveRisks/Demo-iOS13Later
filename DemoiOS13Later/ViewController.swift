@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import SwiftHEXColors
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        setup()
     }
 
 
+    private func setup() {
+        let white = UIColor(hexString: "#ffffff")
+        view.backgroundColor = white
+    }
 }
 
